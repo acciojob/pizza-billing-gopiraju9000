@@ -1,7 +1,7 @@
 package com.driver;
 
 public class Pizza {
-    private String bill;
+    private String bill = "";
     private int totalBillAmount;
     private boolean isVeg;
 
@@ -19,7 +19,7 @@ public class Pizza {
 
         if (isVeg) {
             this.totalBillAmount = this.totalBillAmount + 300;
-            this.bill = bill + "Veg pizza base price = 300" + "\n";
+            this.bill = this.bill + "Veg pizza base price = 300" + "\n";
             this.toppingsPrice = 70;
         } else {
             this.totalBillAmount = this.totalBillAmount + 400;
@@ -61,12 +61,15 @@ public class Pizza {
     }
 
     public String getBill() {
+
         if (billGenerated == false) {
+
             if (ExtraCheeseAdded) bill = bill +"Extra Cheese Added: 80" + "\n";
             if (ExtraToppingsAdded) bill = bill +"Extra Toppings Added: " + toppingsPrice + "\n";
             if(PaperBagAdded) bill = bill + "Paperbag Added: "+paperBagPrice+"\n";
             bill = bill + "Total Price: " + totalBillAmount;
             billGenerated = true;
+
             return this.bill;
         }
        else return null;
