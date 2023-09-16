@@ -67,7 +67,7 @@ public class Pizza {
             if (ExtraCheeseAdded) bill = bill +"Extra Cheese Added: 80" + "\n";
             if (ExtraToppingsAdded) bill = bill +"Extra Toppings Added: " + toppingsPrice + "\n";
             if(PaperBagAdded) bill = bill + "Paperbag Added: "+paperBagPrice+"\n";
-            bill = bill + "Total Price: " + totalBillAmount;
+            bill = bill + "Total Price: " + totalBillAmount+"\n";
             billGenerated = true;
 
             return this.bill;
