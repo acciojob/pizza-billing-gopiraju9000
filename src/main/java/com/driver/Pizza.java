@@ -19,11 +19,11 @@ public class Pizza {
 
         if (isVeg) {
             this.totalBillAmount = this.totalBillAmount + 300;
-            this.bill = this.bill + "Veg pizza base price = 300" + "\n";
+            this.bill = this.bill + "Base Price Of The Pizza: 300" + "\n";
             this.toppingsPrice = 70;
         } else {
             this.totalBillAmount = this.totalBillAmount + 400;
-            this.bill = bill + "Non-veg pizza base price = 400" + "\n";
+            this.bill = bill + "Base Price Of The Pizza: 400"+"\n";
             this.toppingsPrice = 120;
         }
         this.cheesePrice = 80;
